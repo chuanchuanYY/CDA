@@ -1,7 +1,18 @@
 #include "linkList.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+void destroy(LinkList * list)
+{
+    if(list == NULL)
+    return;
+    LinkNode* temp =list->guard->next;
+    while( temp != NULL)
+    {
+        LinkNode* f = temp;
+        temp = temp->next;
+        free(f);
+    }
+}
 void initLinkList(LinkList *list)
 {
     LinkNode* newNode;

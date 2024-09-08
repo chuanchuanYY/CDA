@@ -18,6 +18,7 @@ typedef struct LinkList
 
 
 void initLinkList(LinkList* list);
+void destroy(LinkList * list);
 LinkNode* search(LinkList* list,int value);
 void headInsert(LinkList *list ,int value);
 void backPush(LinkList* list,int value);

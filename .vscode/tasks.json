@@ -5,14 +5,18 @@
             "label": "C/C++: gcc.exe build active file",
             "command": "G:\\Tools_English_path\\MinGW_Extract\\w64devkit\\bin\\gcc.exe",
             "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
+                // "-fdiagnostics-color=always",
+                // "-g",
+                // "${file}",
                 "-I",
                 "./include",
+                "-I",
+                "./Test",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "./src/*.c"
+                "./main.c",
+                "./src/*.c",
+                "./Test/*.c"
             ],
             "options": {
                 "cwd": "${fileDirname}"
