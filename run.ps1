@@ -1,2 +1,2 @@
-gcc -I ./include -I ./Test -o app.exe ./main.c ./src/*.c ./Test/*.c
-./app.exe
+gcc -I ./include -I ./Test -o main.exe ./main.c ./src/*.c ./Test/*.c
+./main.exe

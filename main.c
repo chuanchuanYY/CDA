@@ -3,6 +3,7 @@
 // debug 或或者在VsCode 运行不了是 路径有中文
 int  main()
 {
-   ArraryTest();
+  // ArraryTest();
+  StackTest();
    return 0;
 }
