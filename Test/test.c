@@ -4,7 +4,7 @@
 #include "linkList.h"
 #include "arrary.h"
 #include "stack.h"
-
+#include "queue.h"
 void ArraryTest()
 {
     Arrary arr;
@@ -80,4 +80,30 @@ void StackTest()
     StackPop(&stack,&pop5);
     printf("pop:%d,%d,%d,%d,%d \n",pop1,pop2,pop3,pop4,pop5);
     printf("count after pop %d",stack.count);
+}
+
+
+void QueueTest()
+{
+    Queue q;
+    initQueue(&q);
+
+    // enter some data ;
+    queueEnter(&q,1);
+    queueEnter(&q,2);
+    queueEnter(&q,3);
+    queueEnter(&q,4);
+
+    printf("queue len: %d \n",q.len);
+
+    // pop all data 
+    int pop1,pop2,pop3,pop4;
+    queuePop(&q,&pop1);
+    queuePop(&q,&pop2);
+    queuePop(&q,&pop3);
+    queuePop(&q,&pop4);
+
+    printf("%d,%d,%d,%d\n",pop1,pop2,pop3,pop4);
+    printf("queue len after pop: %d \n",q.len);
+
 }

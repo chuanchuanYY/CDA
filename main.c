@@ -4,6 +4,7 @@
 int  main()
 {
   // ArraryTest();
-  StackTest();
-   return 0;
+  // StackTest();
+  QueueTest();
+  return 0;
 }

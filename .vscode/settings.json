@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "arrary.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "queue.h": "c",
+        "stdlib.h": "c"
     }
 }

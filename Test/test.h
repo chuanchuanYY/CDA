@@ -4,4 +4,5 @@
 void LinkListTest();
 void ArraryTest();
 void StackTest();
+void QueueTest();
 #endif
