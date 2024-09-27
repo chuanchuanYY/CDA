@@ -5,4 +5,6 @@ void LinkListTest();
 void ArraryTest();
 void StackTest();
 void QueueTest();
+void AVLTreeTest();
+
 #endif

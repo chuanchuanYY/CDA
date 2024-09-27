@@ -5,6 +5,27 @@
 #include "arrary.h"
 #include "stack.h"
 #include "queue.h"
+#include "AVLTree.h"
+void AVLTreeTest()
+{
+    AVLTree* tree;
+    initAVLTree(&tree);
+    printf("init AVLTree Count:%d\n",tree->count);
+    AVLTreeInsert(tree,5);
+    AVLTreeInsert(tree,1);
+    AVLTreeInsert(tree,3);
+    AVLTreeInsert(tree,-1);
+    AVLTreeInsert(tree,7);
+    printf("AVLTree Count:%d\n",tree->count);
+    AVLTreeDump(tree);
+
+    AVLTreeRemove(tree,4);
+    AVLTreeRemove(tree,5);
+    printf("AVLTree Count:%d\n",tree->count);
+    AVLTreeDump(tree);
+    AVLTreeDestory(tree);
+
+}
 void ArraryTest()
 {
     Arrary arr;

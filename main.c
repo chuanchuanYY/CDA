@@ -5,6 +5,7 @@ int  main()
 {
   // ArraryTest();
   // StackTest();
-  QueueTest();
+  //QueueTest();
+  AVLTreeTest();
   return 0;
 }

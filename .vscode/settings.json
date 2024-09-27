@@ -3,6 +3,11 @@
         "arrary.h": "c",
         "stdio.h": "c",
         "queue.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "cstdlib": "c",
+        "avltree.h": "c",
+        "random": "c",
+        "limits": "c",
+        "math.h": "c"
     }
 }
