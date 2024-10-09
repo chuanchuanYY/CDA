@@ -6,6 +6,7 @@ int  main()
   // ArraryTest();
   // StackTest();
   //QueueTest();
-  AVLTreeTest();
+  //AVLTreeTest();
+  HeapTest();
   return 0;
 }

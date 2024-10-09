@@ -6,5 +6,5 @@ void ArraryTest();
 void StackTest();
 void QueueTest();
 void AVLTreeTest();
-
+void HeapTest();
 #endif

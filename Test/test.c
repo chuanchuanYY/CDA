@@ -6,6 +6,35 @@
 #include "stack.h"
 #include "queue.h"
 #include "AVLTree.h"
+#include "heap.h"
+void HeapTest()
+{
+    Heap h;
+    initHeap(&h);
+    int i = 0;
+    int count;
+    heapCount(&h,&count);
+    printf("heap count is :%d\n",count);
+    for(i=0; i<100; i++)
+    {
+        heapPush(&h,i);
+    }
+    heapCount(&h,&count);
+    printf("heap count is :%d after push\n",count);
+
+    int peek;
+    heapPeek(&h,&peek);
+    printf("peek top:%d\n",peek);
+    int pop;
+    for(i=0; i<count; i++)
+    {
+        heapPop(&h,&pop);
+        printf("%d ",pop);
+    }
+    printf("\n");
+    heapCount(&h,&count);
+    printf("heap count is :%d after pop\n",count);
+}
 void AVLTreeTest()
 {
     AVLTree* tree;
